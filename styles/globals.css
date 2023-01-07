@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+    .feed-true {
+        color: rgb(0 0 0 / 0.6);
+    }
+
+    .feed-true:hover {
+        --tw-text-opacity: 1;
+        color: rgb(0 0 0 / var(--tw-text-opacity));
+    }
+
+    .space> :not([hidden])~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .dark {
+            color: rgb(255 255 255 / 0.75);
+        }
+
+        .dark:hover {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .lg {
+            margin-bottom: -0.375rem
+                /* -6px */
+            ;
+        }
+    }
+
+    .feed-false {
+        --tw-text-opacity: 1;
+        color: rgb(107 114 128 / var(--tw-text-opacity));
+    }
+
+    .feed-false:hover {
+        --tw-text-opacity: 1;
+        color: rgb(55 65 81 / var(--tw-text-opacity));
+    }
+}
