@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer component{
     .feed-true {
         color: rgb(0 0 0 / 0.6);
     }
@@ -45,5 +45,11 @@
     .feed-false:hover {
         --tw-text-opacity: 1;
         color: rgb(55 65 81 / var(--tw-text-opacity));
+    }
+}
+
+@layer components{
+    .intent{
+        @apply flex justify-between items-center hover:shadow-xl p-4
     }
 }
