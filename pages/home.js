@@ -51,6 +51,10 @@ const Home = () => {
                 <ArrowForwardIosRounded className='text-gray-700' />
               </div>
             </div>
+
+            <div className='relative xl:absolute w-50 h-50 xl:w-[580px] xl:h-[525px] top-14 right-5'>
+              <Image src="/main.svg" fill priority/>
+            </div>
           </div>
         </main>
       </div>
