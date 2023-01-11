@@ -6,10 +6,15 @@ import GroupIcon from "@mui/icons-material/Group";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { ArrowForwardIosRounded } from '@mui/icons-material';
+import Head from 'next/head';
 
 const Home = () => {
     return (
       <div>
+        <Head>
+          <title>LinkedIn</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <header className="flex justify-around items-center py-4">
           <div className="relative w-36 h-10">
             <Image
@@ -52,7 +57,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='relative xl:absolute w-50 h-50 xl:w-[580px] xl:h-[525px] top-14 right-5'>
+            <div className='relative xl:absolute w-50 h-50 xl:w-[650px] xl:h-[525px] top-14 right-5'>
               <Image src="/main.svg" fill priority/>
             </div>
           </div>
